@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('GetProject') {
             steps {
-                git 'https://github.com/MT-byte/java_proj'
+                git 'https://github.com/MT-byte/springboot_proj'
             }
         }
         stage('Build') {
