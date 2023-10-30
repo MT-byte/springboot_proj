@@ -14,6 +14,11 @@ pipeline {
                 sh "mvn compiler:compile"
             }
         }
+        stage('StartWebApp') {
+            steps {
+                sh "mvn spring-boot:start"
+            }
+        }
         stage('Exec') {
             steps {
                 sh "mvn exec:java"
